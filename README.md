@@ -1,30 +1,5 @@
 # Booking_API_Test Using Postman  
 Url-(https://restful-booker.herokuapp.com/booking)
- 
-
-What is API?
-An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. It defines the methods and data formats applications can use to request and exchange information.
-
-Key Points about APIs:
-
-Interface: APIs serve as an interface between different software components, enabling them to interact without knowing each other's internal workings.
-
-Requests and Responses: Typically, an application requests the API, which then processes the request and sends back a response.
-For example, a weather app might use an API to request current weather data from a server, which then responds with the information.
-
-HTTP Methods: In web APIs, common methods include:
-
-GET: Retrieve data from a server.
-
-POST: Send data to a server to create a new resource.
-
-PUT: Update an existing resource on the server.
-
-DELETE: Remove a resource from the server.
-
-JSON/XML: Data exchanged between an API and an application is often in formats like JSON (JavaScript Object Notation) or XML (eXtensible Markup Language).
-
-# Booking API Testing with Postman
 
 ## Prerequisites
 
@@ -103,62 +78,68 @@ Ensure the option to install npm is checked during the installation.
 Verify Installation:
 
 Open a terminal or command prompt.
+
 Run the following commands to verify the installation:
-bash
-Copy code
+
 node -v
+
 npm -v
+
 You should see version numbers for both Node.js and npm.
+
 Step 2: Install Newman
 With Node.js and npm installed, you can now install Newman:
 
 Open Terminal/Command Prompt:
 
 On Windows, you can use Command Prompt or PowerShell.
+
 On macOS/Linux, use the Terminal.
+
 Install Newman Globally:
 
 Run the following command to install Newman globally on your system:
-bash
-Copy code
+
 npm install -g newman
+
 The -g flag installs Newman globally, making it accessible from anywhere on your system.
 Verify Newman Installation:
 
 After installation, verify that Newman was installed correctly by running:
-bash
-Copy code
-newman -v
+
+Newman -v
 You should see the version number of Newman.
+
 Step 3: Run a Postman Collection with Newman
+
 Once Newman is installed, you can run Postman collections using the following command:
 
 Run a Collection:
 
 Navigate to the directory where your Postman collection is located, or provide the path to the collection.
 Run the collection with Newman:
-bash
-Copy code
+
 newman run your_collection.json
+
 Replace your_collection.json with the path to your Postman collection file.
 Example Command:
 
-bash
-Copy code
 newman run my_postman_collection.json
+
 If your collection requires an environment file, you can include it with the -e flag:
-bash
-Copy code
+
 newman run my_postman_collection.json -e my_environment.json
+
 Step 4: Explore Additional Newman Features (Optional)
+
 Generate HTML Report:
-bash
-Copy code
-newman run my_postman_collection.json -r html
+
+newman run my_postman_collection.json -r HTML
+
 Run a Collection from a URL:
-bash
-Copy code
+
 newman run https://www.example.com/your_collection.json
+
 These steps will set up Newman and allow you to run your Postman collections directly from the command line.
 
 # Screenshots:
