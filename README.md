@@ -144,7 +144,21 @@ These steps will set up Newman and allow you to run your Postman collections dir
 
 # Screenshots:
 
+1. Booking API Run Collections:
+
 ![image](https://github.com/user-attachments/assets/69a9325e-f81b-4d06-8316-05fe704ed32e)
+
+2. Newman-Run-Report:
+
+![image](https://github.com/user-attachments/assets/a48925a6-dc0c-4f6a-aad7-598f177e07b6)
+
+3. Newman-Summary-Report-Html:
+
+![image](https://github.com/user-attachments/assets/1bcbe36c-e8dd-4be1-a48e-893c5b268a96)
+
+
+
+
 
 
 
