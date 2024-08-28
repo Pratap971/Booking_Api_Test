@@ -6,13 +6,22 @@ What is API?
 An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. It defines the methods and data formats applications can use to request and exchange information.
 
 Key Points about APIs:
+
 Interface: APIs serve as an interface between different software components, enabling them to interact without knowing each other's internal workings.
-Requests and Responses: Typically, an application requests the API, which then processes the request and sends back a response. For example, a weather app might use an API to request current weather data from a server, which then responds with the information.
+
+Requests and Responses: Typically, an application requests the API, which then processes the request and sends back a response.
+For example, a weather app might use an API to request current weather data from a server, which then responds with the information.
+
 HTTP Methods: In web APIs, common methods include:
+
 GET: Retrieve data from a server.
+
 POST: Send data to a server to create a new resource.
+
 PUT: Update an existing resource on the server.
+
 DELETE: Remove a resource from the server.
+
 JSON/XML: Data exchanged between an API and an application is often in formats like JSON (JavaScript Object Notation) or XML (eXtensible Markup Language).
 
 # Booking API Testing with Postman
@@ -26,7 +35,7 @@ JSON/XML: Data exchanged between an API and an application is often in formats l
 
 1. **Import Collection**: Import the Booking API collection into Postman.
 2. **Environment Setup**: Create an environment with the following variables:
-   - `base_url`: Base URL of the API.
+   - `base_url`: Base URL (https://restful-booker.herokuapp.com/booking) of the API.
    - `api_key`: API key (if required).
    - `booking_id`: (Optional) Used to store a booking ID.
 
