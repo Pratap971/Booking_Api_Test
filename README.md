@@ -50,7 +50,7 @@ We have 2 Test case Scenario:
    f) Delete Booking
    g) Curl Command Import
 
-  2. Negative Endpoints:
+  3. Negative Endpoints:
      a) Get Booking Details Invalid Id
      b) Create Booking Invalid chars
       
@@ -85,6 +85,81 @@ We have 2 Test case Scenario:
 - **400**: Check request body.
 - **401**: Verify API key.
 - **500**: Check API server status.
+
+# Newman:
+Newman is a command-line tool used to run Postman collections. Here are the steps to install Newman:
+
+Step 1: Install Node.js and npm
+Newman requires Node.js and npm (Node Package Manager). If you don't have these installed, follow these steps:
+
+Download Node.js:
+
+Go to the Node.js official website.
+Download the latest LTS version (which includes npm).
+Install Node.js:
+
+Run the installer and follow the installation instructions.
+Ensure the option to install npm is checked during the installation.
+Verify Installation:
+
+Open a terminal or command prompt.
+Run the following commands to verify the installation:
+bash
+Copy code
+node -v
+npm -v
+You should see version numbers for both Node.js and npm.
+Step 2: Install Newman
+With Node.js and npm installed, you can now install Newman:
+
+Open Terminal/Command Prompt:
+
+On Windows, you can use Command Prompt or PowerShell.
+On macOS/Linux, use the Terminal.
+Install Newman Globally:
+
+Run the following command to install Newman globally on your system:
+bash
+Copy code
+npm install -g newman
+The -g flag installs Newman globally, making it accessible from anywhere on your system.
+Verify Newman Installation:
+
+After installation, verify that Newman was installed correctly by running:
+bash
+Copy code
+newman -v
+You should see the version number of Newman.
+Step 3: Run a Postman Collection with Newman
+Once Newman is installed, you can run Postman collections using the following command:
+
+Run a Collection:
+
+Navigate to the directory where your Postman collection is located, or provide the path to the collection.
+Run the collection with Newman:
+bash
+Copy code
+newman run your_collection.json
+Replace your_collection.json with the path to your Postman collection file.
+Example Command:
+
+bash
+Copy code
+newman run my_postman_collection.json
+If your collection requires an environment file, you can include it with the -e flag:
+bash
+Copy code
+newman run my_postman_collection.json -e my_environment.json
+Step 4: Explore Additional Newman Features (Optional)
+Generate HTML Report:
+bash
+Copy code
+newman run my_postman_collection.json -r html
+Run a Collection from a URL:
+bash
+Copy code
+newman run https://www.example.com/your_collection.json
+These steps will set up Newman and allow you to run your Postman collections directly from the command line.
 
 # Screenshots:
 
