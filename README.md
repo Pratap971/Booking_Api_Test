@@ -77,6 +77,12 @@ We have 2 Test case Scenario:
 - **401**: Verify API key.
 - **500**: Check API server status.
 
+# Screenshots:
+
+![image](https://github.com/user-attachments/assets/69a9325e-f81b-4d06-8316-05fe704ed32e)
+
+
+
 
 
 
